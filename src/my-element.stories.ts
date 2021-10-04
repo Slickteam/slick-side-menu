@@ -7,8 +7,12 @@ export default {
     argTypes: {
         open: { control: 'boolean' },
         title: { control: 'string' },
+        user: { control: 'boolean' },
         username: { control: 'string' },
+        avatar: { control: 'string' },
         items: { control: 'array' },
+        color: { control: 'string' },
+        background: { control: 'string' },
     }
 };
 
@@ -16,6 +20,7 @@ export default {
 function Template({
                       open=true,
                       title='Menu title',
+                      user=true,
                       username='Michel Laboule',
                       items = [
                           {
@@ -34,6 +39,7 @@ function Template({
         <slick-side-menu
                 .open=${open}
                 .title=${title}
+                .user=${user}
                 .username=${username}
                 .items=${items}
         ></slick-side-menu>

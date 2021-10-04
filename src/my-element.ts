@@ -110,7 +110,7 @@ export class SlickSideMenu extends LitElement {
       width: 100%;
       height: 100%;
       background: #000;
-      opacity: 0.6;
+      opacity: 0.5;
       transition: all 1s ease;
     }
   `
@@ -175,7 +175,7 @@ export class SlickSideMenu extends LitElement {
    * Returns a true or false value to display or hide the side menu
    */
   @property()
-  background = '#d75e01'
+  background = '#f97316'
 
   colorInversion(e: any) {
     e.currentTarget.setAttribute('style', `background: ${this.color}; color: ${this.background};`)
