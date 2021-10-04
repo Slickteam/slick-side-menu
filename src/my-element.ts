@@ -195,6 +195,12 @@ export class SlickSideMenu extends LitElement {
     dispatchEvent(event);
   }
 
+  overlayClicked() {
+    console.log(`event 'slick-overlay' emitted`)
+    const event = new CustomEvent('slick-overlay');
+    dispatchEvent(event);
+  }
+
   render() {
     return html`
       <div 
@@ -246,10 +252,9 @@ export class SlickSideMenu extends LitElement {
         </div>
       </div>
       ${this.open ? html`
-            <div class="overlay" @click="${this.hideMenu}"></div>
+            <div class="overlay" @click="${this.overlayClicked}"></div>
           ` 
           : html``}
-      
     `
   }
 }
