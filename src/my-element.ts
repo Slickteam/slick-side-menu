@@ -112,6 +112,7 @@ export class SlickSideMenu extends LitElement {
       background: #000;
       opacity: 0.5;
       transition: all 1s ease;
+      z-index: 90;
     }
   `
 
@@ -119,7 +120,7 @@ export class SlickSideMenu extends LitElement {
    * Returns a true or false value to display or hide the side menu
    */
   @property()
-  open = true
+  open = false
 
   /**
    * Returns a true or false value to display or hide the side menu
@@ -183,10 +184,6 @@ export class SlickSideMenu extends LitElement {
 
   backToNormal(e: any) {
     e.currentTarget.setAttribute('style', `background: ${this.background}; color: ${this.color};`)
-  }
-
-  hideMenu() {
-    this.open = false;
   }
 
   logOut() {

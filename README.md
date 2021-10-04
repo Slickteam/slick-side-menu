@@ -82,9 +82,10 @@ Name                | Type               | Description
 
 ### Events
 
-Name            | Description
----             | ---
-`slick-logout`  | The event emitted when the logout button is clicked in the user section.
+Name                | Description
+---                 | ---
+`slick-logout`      | The event emitted when the logout button is clicked in the user section.
+`slick-overlay`     | The event emitted when the overlay is clicked.
 
 ## Development
 
