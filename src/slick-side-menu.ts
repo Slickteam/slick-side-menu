@@ -176,12 +176,12 @@ export class SlickSideMenu extends LitElement {
   @property()
   background = '#f97316'
 
-  logOut() {
+  _logOut() {
     const event = new CustomEvent('slick-logout');
     this.dispatchEvent(event);
   }
 
-  overlayClicked() {
+  _overlayClicked() {
     const event = new CustomEvent('slick-overlay');
     this.dispatchEvent(event);
   }
@@ -207,7 +207,7 @@ export class SlickSideMenu extends LitElement {
               <div class="username">
                 ${this.username}
               </div>
-              <button class="log_out" @click="${this.logOut}">
+              <button class="log_out" @click="${this._logOut}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor ;transform: ;msFilter:;"><path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path><path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path></svg>
               </button>
           </div>` 
@@ -222,7 +222,7 @@ export class SlickSideMenu extends LitElement {
         </div>
       </div>
       ${this.open ? html`
-            <div class="overlay" @click="${this.overlayClicked}"></div>
+            <div class="overlay" @click="${this._overlayClicked}"></div>
           ` 
           : html``}
     `

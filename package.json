@@ -1,11 +1,11 @@
 {
   "name": "@slickteam/slick-side-menu",
-  "version": "0.0.3-4",
+  "version": "0.0.3-5",
   "main": "dist/slick-side-menu.es.js",
   "exports": {
     ".": "./dist/slick-side-menu.es.js"
   },
-  "types": "types/my-element.d.ts",
+  "types": "types/slick-side-menu.d.ts",
   "files": [
     "dist",
     "types"
