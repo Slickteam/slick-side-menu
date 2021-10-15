@@ -177,15 +177,13 @@ export class SlickSideMenu extends LitElement {
   background = '#f97316'
 
   logOut() {
-    console.log(`event 'slick-logout' emitted`)
     const event = new CustomEvent('slick-logout');
-    dispatchEvent(event);
+    this.dispatchEvent(event);
   }
 
   overlayClicked() {
-    console.log(`event 'slick-overlay' emitted`)
     const event = new CustomEvent('slick-overlay');
-    dispatchEvent(event);
+    this.dispatchEvent(event);
   }
 
   render() {
