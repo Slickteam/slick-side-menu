@@ -64,6 +64,7 @@ export class SlickSideMenu extends LitElement {
     .nav ul {
       padding: 0;
       margin: 0;
+      list-style-type: none;
     }
     
     .nav ul li{
