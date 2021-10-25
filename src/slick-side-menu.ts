@@ -67,32 +67,6 @@ export class SlickSideMenu extends LitElement {
       list-style-type: none;
     }
     
-    .nav ul li{
-      height: 40px;
-      margin: 0 3px 5px;
-      list-style: none;
-      line-height: 40px;
-      padding: 6px 12px;
-      border-radius: 5px;
-      transition: all 0.2s ease;
-    }
-    
-    .nav ul li a > *{
-      margin: 0 6px;
-    }
-    
-    .nav ul li a{
-      color: inherit;
-      display: flex;
-      align-items: center;
-      transition: all 0.2s ease;
-    }
-    
-    .nav ul li:hover {
-      height: 100%;
-      transition: all 0.2s ease;
-    }
-    
     .log_out {
       margin: 0 10px 0 0;
       border: none;
